@@ -350,6 +350,8 @@ section {
 
 .about .skill-name {
     margin-top: 15px;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .about .section-header p {
@@ -411,12 +413,77 @@ section {
     margin-top: 15px;
 }
 
+@media (max-width: 768px) {
+    .about .row {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .about .col-lg-6 {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .about .about-img {
+      padding: 30px;
+      text-align: center;
+    }
+  
+    .about .about-img img {
+      width: 80%;
+      height: auto;
+      max-width: 300px; /* Set max-width for smaller screens */
+    }
+  
+    .about .about-content {
+      position: static;
+      text-align: center;
+      width: 100%;
+      padding: 0 20px;
+      margin-top: 20px;
+    }
+  
+    .about .section-header p {
+      font-size: 28px;
+      text-align: left;
+    }
+    .about .skill-name{
+        display: grid;
+        grid-template-columns: 1fr 0.4fr;
+        
+    }
+    .about .skill-name h5:last-child {
+        /* margin-top: 10px; */
+        position: relative;
+        top: 20px;
+        font-size: 14px;
+        text-align: right;
+    }
+    .about .about-text p{
+        font-size: 14px;
+        text-align: left !important;
+    } 
 
-@media (max-width: 991.98px) {
+    .about .skill-name h5{
+      font-size: 14px;
+      text-align: left;
+    }
+  
+    .about .progress {
+      height: 5px;
+      width: 250px;
+    }
+  
+    .about .progress .progress-in {
+      height: 100%;
+    }
+  }
+
+/* @media (max-width: 991.98px) {
     .about .about-content {
         padding: 45px 15px 0 15px;
     }
-}
+} */
 
 .accomplishments h2 {
     margin-bottom: 5rem;
